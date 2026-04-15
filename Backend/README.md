@@ -45,7 +45,7 @@ npm run dev
 Server runs on:
 
 ```
-http://localhost:3000
+https://user-management-system-dkdx.onrender.com
 ```
 
 ---
