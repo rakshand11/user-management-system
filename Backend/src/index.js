@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { userRouter } from "./route/user.route.js";
+import { adminRouter } from "./route/admin.route.js";
 dotenv.config();
 
 const app = express();
@@ -19,6 +20,7 @@ const connectToDatabase = async () => {
 connectToDatabase();
 app.use(express.json());
 app.use("/user", userRouter);
+app.use("/admin", adminRouter);
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 });
