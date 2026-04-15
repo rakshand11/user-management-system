@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "https://user-management-system.rakshand.site/",
+    origin: "https://user-management-system.rakshand.site",
     credentials: true,
   }),
 );
