@@ -1,16 +1,89 @@
-# React + Vite
+# Frontend - User Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+This is the frontend part of the project built using React.
+It connects with the backend APIs and provides UI for login, dashboard, user management, etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- React Router
+- Axios
+- Basic CSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup
+
+### 1. Install dependencies
+
+```bash id="j5w7cw"
+npm install
+```
+
+---
+
+### 2. Run the app
+
+```bash id="3o0qmr"
+npm run dev
+```
+
+App will run on:
+
+```id="b0bq3g"
+http://localhost:5173
+```
+
+---
+
+## Pages
+
+- Login
+- Dashboard
+- Users (admin & manager)
+- Create User (admin only)
+- Edit User
+- Profile
+
+---
+
+## Features
+
+- Login / Logout
+- JWT token stored in localStorage
+- Protected routes
+- Role based UI (admin / manager / user)
+- User CRUD operations
+- API integration using axios
+
+---
+
+## How it works
+
+- After login, token is saved in localStorage
+- All API calls include token in headers
+- Routes are protected based on user role
+- Admin and manager see different UI options
+
+---
+
+## Notes
+
+- Make sure backend is running on:
+
+```id="wd8q3r"
+http://localhost:3000
+```
+
+- If you get CORS error, enable cors in backend
+
+---
+
+## Extra
+
+UI is kept simple using basic CSS.
+Main focus was functionality and role-based access.
