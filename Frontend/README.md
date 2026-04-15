@@ -35,7 +35,7 @@ npm run dev
 App will run on:
 
 ```id="b0bq3g"
-http://localhost:5173
+https://user-management-system.rakshand.site
 ```
 
 ---
